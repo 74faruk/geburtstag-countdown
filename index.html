@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geburtstags-Countdown</title>
+<meta name="description" content="Countdown bis zum nächsten Geburtstag, aktuelles Alter und mehr.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>🎂 Geburtstags-Countdown</h1>
+      <p class="subtitle">Wie lange noch bis zum nächsten Geburtstag?</p>
+    </header>
+
+    <form class="form" id="birthForm">
+      <input type="date" id="birthdateInput" required>
+      <button type="submit">Anzeigen</button>
+    </form>
+
+    <section class="result" id="result" hidden>
+      <div class="age-line">
+        <span class="age-value" id="ageValue">–</span>
+        <span class="age-label">Jahre alt</span>
+      </div>
+
+      <div class="countdown" id="countdown">
+        <div class="countdown-unit">
+          <span class="countdown-value" id="daysValue">0</span>
+          <span class="countdown-label">Tage</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="hoursValue">0</span>
+          <span class="countdown-label">Std.</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="minutesValue">0</span>
+          <span class="countdown-label">Min.</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="secondsValue">0</span>
+          <span class="countdown-label">Sek.</span>
+        </div>
+      </div>
+      <p class="countdown-sub" id="countdownSub">bis zum nächsten Geburtstag</p>
+
+      <p class="fact-text" id="factText"></p>
+    </section>
+
+    <footer class="app-footer">
+      <a href="https://74faruk.github.io" target="_blank" rel="noopener">← Zurück zum Portfolio</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
